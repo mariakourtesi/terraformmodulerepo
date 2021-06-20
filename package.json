@@ -1,0 +1,26 @@
+{
+  "name": "terraformmodulerepo",
+  "version": "0.0.0-development",
+  "description": "terraform module",
+  "main": "index.js",
+  "dependencies": {
+    "semantic-release": "^17.4.4"
+  },
+  "devDependencies": {
+    "semantic-release": "^17.4.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariakourtesi/terraformmodulerepo.git"
+  },
+  "author": "maria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariakourtesi/terraformmodulerepo/issues"
+  },
+  "homepage": "https://github.com/mariakourtesi/terraformmodulerepo#readme"
+}
