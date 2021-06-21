@@ -36,10 +36,21 @@ resource "aws_autoscaling_group" "example" {
     max_size = var.max_size
 
     tag {
-        key = "${var.cluster_name}"
-        value = "terraform-asg-example"
+        key = "Name"
+        value = var.cluster_name
         propagate_at_launch = true
     }
+
+    dynamic "tag" {
+        for_each = var.custom.tags
+    }
+
+    content {
+        key = tag.key
+        value = tag.value
+        propagate_at_launch = true
+    }
+
 }
 
 resource "aws_lb" "example" {
